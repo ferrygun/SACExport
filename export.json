@@ -1,0 +1,156 @@
+{
+  "id": "com.fd.djaja.sap.sac.export",
+  "version": "0.0.2",
+  "name": "Export",
+  "description": "Export",
+  "newInstancePrefix": "Export",
+  "icon": "data:image/png;base64,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",
+  "vendor": "Ferry Djaja",
+  "eula": "",
+  "license": "",
+  "imports": [ "input-controls" ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-fd-djaja-sap-sac-export",
+      "url": "http://localhost/SAC/sacexport/export.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "styling",
+      "tag": "com-fd-djaja-sap-sac-export-aps",
+      "url": "http://localhost/SAC/sacexport/export_aps.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "serverURL": {
+      "type": "string",
+      "description": "The URL to the open bi Repository installation that handles the export. If you use an installation on your local machine, change this property to http://localhost:9091, otherwise to the address and port of your installation.",
+      "default": "http://localhost:3000/export"
+    },
+    "filename": {
+      "type": "string",
+      "description": "The file name of the export document. The extension will be determined automatically. You can use placeholders (manual section 3.9).",
+      "default": "export.html"
+    },
+    "showIcons": {
+      "type": "boolean",
+      "description": "Show icons in the export buttons",
+      "default": true
+    },
+    "showTexts": {
+      "type": "boolean",
+      "description": "Show texts in the export buttons",
+      "default": true
+    },
+    "showComponentSelector": {
+      "type": "boolean",
+      "description": "Show component selector before exporting",
+      "default": false
+    },
+    "enablePpt": {
+      "type": "boolean",
+      "description": "Show PowerPoint option",
+      "default": true
+    },
+    "pptSelectedWidgets": {
+      "type": "string",
+      "description": "Selected Widgets for PowerPoint export",
+      "default": ""
+    },
+    "metadata": {
+      "type": "string",
+      "description": "For internal use",
+      "default": ""
+    }
+  },
+  "methods": {
+    "getServerUrl": {
+      "returnType": "string",
+      "description": "Get the Server URL",
+      "parameters": []
+    },
+    "setServerUrl": {
+      "description": "Set the Server URL",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new Server URL"
+        }
+      ]
+    },
+    "getFilename": {
+      "returnType": "string",
+      "description": "Get the filename",
+      "parameters": []
+    },
+    "setFilename": {
+      "description": "Set the filename",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new filename"
+        }
+      ]
+    },
+    "getButtonIconVisible": {
+      "returnType": "boolean",
+      "description": "Get the visibility of the button icon",
+      "parameters": []
+    },
+    "setButtonIconVisible": {
+      "description": "Set the visibility of the button text",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "boolean",
+          "description": "The new visibility"
+        }
+      ]
+    },
+    "getButtonTextVisible": {
+      "returnType": "boolean",
+      "description": "Get the visibility of the button text",
+      "parameters": []
+    },
+    "setButtonTextVisible": {
+      "description": "Set the visibility of the button text",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "boolean",
+          "description": "The new visibility"
+        }
+      ]
+    },
+    "doExport": {
+      "description": "Triggers the export process.",
+      "parameters": [
+        {
+          "name": "format",
+          "type": "string",
+          "description": "The export format: \"HTML\""
+        }
+      ]
+    }
+  },
+  "events": {
+    "onStart": {
+      "description": "Specify the SAC Script that shall be triggered when the Export process is started. If you set the publishing property Parse CSS to true, all image resources are collected in this phase."
+    },
+    "onSend": {
+      "description": "Specify the SAC Script that shall be triggered when the Export process sends the content to the Export service."
+    },
+    "onReturn": {
+      "description": "Specify the SAC Script that shall be triggered when the Export process receives the generated document from the Export service."
+    },
+    "onError": {
+      "description": "Specify the SAC Script that shall be triggered when an error is reported by the Export process."
+    }
+  }
+}
