@@ -1,9 +1,12 @@
 "use strict";
+const nodeHtmlToImage = require('node-html-to-image')
 const port = process.env.PORT || 3000;
 const server = require("http").createServer();
 const cors = require('cors');
 const multer = require('multer')
-const upload = multer()
+const upload = multer({
+  limits: { fieldSize: 2 * 1024 * 1024 }
+})
 const htmlparser2 = require("htmlparser2");
 const cheerio = require('cheerio')
 const sap = "data-sap-widget-id";
@@ -31,7 +34,7 @@ app.get("/export", (req, res) => {
 });
 
 
-app.post('/export', upload.none(), function(req, res, next) {
+app.post('/export', upload.none(), async function(req, res, next) {
     const jsonsetting = JSON.parse(req.body.export_settings_json);
     let metadata = JSON.parse(jsonsetting.metadata);
     let rawHtml = req.body.export_content;
@@ -84,8 +87,19 @@ app.post('/export', upload.none(), function(req, res, next) {
     parser.write(
         rawHtml
     );
+
+
+	console.log(htmlfinal);
+	const image = nodeHtmlToImage({
+	  output: './image.png',
+	  html: htmlfinal
+	})
+    .then(() => console.log('The image was created successfully!'))
+
+
     parser.end(
         res.status(200).send(htmlfinal)
+
     );
 })
 
